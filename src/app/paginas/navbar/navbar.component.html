@@ -1,0 +1,27 @@
+<!--<h1>Burger Menu <span>by JLNLJN</span></h1>
+
+<input id="burger" type="checkbox" />
+
+<label for="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
+
+<nav>    
+  <ul>
+    <li class="hover-underline"><a href="inicio">Inicio</a></li>
+    <li><a href="#">Quienes somos</a></li>
+    <li><a href="#">Que hacemos</a></li>
+    <li class="hover-underline"><a href="contacto">Contacto</a></li>
+  </ul> 
+</nav>-->
+<p-menubar [model]="items">
+    <ng-template pTemplate="start">
+        <img src="assets/showcase/images/primeng.svg" height="40" class="p-mr-2">
+    </ng-template>
+    <ng-template pTemplate="end">
+        <button pButton type="button" icon="pi pi-user" label="registrarse" ></button>
+        <button pButton type="button" icon="pi pi-user" label="iniciar sesion" class="mx-3"></button>
+    </ng-template>
+</p-menubar>
