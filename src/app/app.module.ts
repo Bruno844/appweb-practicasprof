@@ -8,10 +8,11 @@ import {ButtonModule} from 'primeng/button';
 import {CheckboxModule} from 'primeng/checkbox';
 
 
+//modulo de swiper
+import  {NgxUsefulSwiperModule}  from 'ngx-useful-swiper';
 
 
-
-
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,8 +20,7 @@ import { InicioComponent } from './paginas/inicio/inicio.component';
 import { NavbarComponent } from './paginas/navbar/navbar.component';
 import { FooterComponent } from './paginas/footer/footer.component';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
-import { LoginComponent } from './admin/login/login.component';
-import { RegisterComponent } from './admin/register/register.component';
+import { RegistroComponent } from './paginas/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +29,7 @@ import { RegisterComponent } from './admin/register/register.component';
     NavbarComponent,
     FooterComponent,
     ContactoComponent,
-    LoginComponent,
-    RegisterComponent
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +37,9 @@ import { RegisterComponent } from './admin/register/register.component';
     CardModule,
     MenubarModule,
     ButtonModule,
-    CheckboxModule
+    CheckboxModule,
+    NgxUsefulSwiperModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

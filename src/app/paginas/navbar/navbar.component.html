@@ -18,10 +18,9 @@
 </nav>-->
 <p-menubar [model]="items">
     <ng-template pTemplate="start">
-        <img src="assets/showcase/images/primeng.svg" height="40" class="p-mr-2">
+        <img src="assets/logos/logo-app.png"  height="100" width="auto"  class="p-mr-2">
     </ng-template>
     <ng-template pTemplate="end">
-        <button pButton type="button" icon="pi pi-user" label="registrarse" ></button>
-        <button pButton type="button" icon="pi pi-user" label="iniciar sesion" class="mx-3"></button>
+        <button pButton type="button" icon="pi pi-user" label="registrarse" routerLink="/registro" ></button>
     </ng-template>
 </p-menubar>
