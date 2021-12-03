@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
   font-family: Open Sans;
 }
@@ -53,12 +55,14 @@ section {
   color: #ffffff;
   margin: 20px 0 12px;
   padding: 0;
+ 
 
 }
 
 .footer-distributed .footer-links a {
   display: inline-block;
   line-height: 1.8;
+  font-family: 'Bebas Neue', cursive;
   font-weight: 400;
   text-decoration: none;
   color: inherit;
@@ -66,9 +70,10 @@ section {
 
 .footer-distributed .footer-company-name {
   color: #222;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
   margin: 0;
+  font-family: 'Bebas Neue', cursive;
 }
 
 /* Footer Center */
@@ -99,6 +104,7 @@ section {
   display: inline-block;
   color: #ffffff;
   font-weight: 400;
+  font-family: 'Bebas Neue', cursive;
   vertical-align: middle;
   margin: 0;
 }
@@ -106,6 +112,7 @@ section {
 .footer-distributed .footer-center p span {
   display: block;
   font-weight: normal;
+  font-family: 'Bebas Neue', cursive;
   font-size: 14px;
   line-height: 2;
 }
@@ -147,8 +154,8 @@ section {
 .footer-distributed .footer-company-about span {
   display: block;
   color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Bebas Neue', cursive;
   margin-bottom: 20px;
 }
 
@@ -173,7 +180,7 @@ section {
   margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+
 
 @media (max-width: 880px) {
   .footer-distributed {

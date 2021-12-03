@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fir-practicasp": {
+      "hosting": {
+        "appweb-practicasp": [
+          "fir-practicasp"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fir-practicasp"
+  }
+}

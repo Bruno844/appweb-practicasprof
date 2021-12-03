@@ -1,6 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeflex/primeflex.css";
 
+.p-menubar{
+    border: none !important;
+    border-radius: none !important;
+}
+p-menubarsub{
+    margin: 0 0 0 auto !important;
+}
+
 body{
     margin: 0 !important;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    background: #287DC5;
+    border-radius: 50px;
 }
