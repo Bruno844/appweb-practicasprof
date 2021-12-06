@@ -3,6 +3,7 @@ import {MenuItem} from 'primeng/api';
 import { AuthService } from 'src/app/services/auth.service';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
+import {AlertasService} from '../../services/alertas.service';
 
 
 
@@ -20,7 +21,7 @@ export class NavbarComponent implements OnInit {
   public username:any = '';
   public fotoUsuario:any = '';
 
-  constructor(private authService: AuthService, private angularAuth: AngularFireAuth, private router: Router) { }
+  constructor(private authService: AuthService, private angularAuth: AngularFireAuth, private router: Router, private alerta:AlertasService) { }
 
   ngOnInit(): void {
     this.items = [
@@ -29,11 +30,12 @@ export class NavbarComponent implements OnInit {
         routerLink: '/inicio'
       },
       {
-        label: 'Que Hacemos',
-
+        label: 'Nuestro Equipo',
+        routerLink: '/nuestro-equipo'
       },
       {
-        label: 'Nuestro Equipo',
+        label: 'Que Hacemos',
+
       },
       {
         label: 'Como lo hacemos',
@@ -64,6 +66,7 @@ export class NavbarComponent implements OnInit {
     this.authService.logOut().then((res)=>{
       const c = confirm('seguro que quieres salir?');
       if(c){
+        this.alerta.showOutLogin('Cerraste Sesion ', 'Adios ' + this.username);
         this.router.navigate(['/registro']);
       }
     })

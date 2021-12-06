@@ -67,10 +67,7 @@
     </div>
 </div>
 <!----------------------------------------------------------------------------------------------->
-<br>
-<br>
-<br>
-<div class="surface-section px-4 py-2 md:px-6 lg:px-8">
+<!--<div class="surface-section px-4 py-2 md:px-6 lg:px-8">
     <div class="text-700 text-center titulonegrita">
         <div class="text-900 font-bold text-5xl mb-3">Nuestro Equipo, mejorando cada dia</div>
         <div class="text-700 text-2xl mb-5">Profesionales capacitados para llevar el cambio de manera mas facil y de calidad</div>
@@ -222,7 +219,7 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div>
-</div>
+</div>-->
 
 <!-------------------------------------------------------------------------------------------------->
 <!--SECCION DE *COMO LO HACEMOS*-->
@@ -231,26 +228,21 @@
     <div class="text-900 text-center titulonegrita">
         <div class="text-900 font-bold text-5xl mb-3 mb-6">Como Lo Hacemos</div>
     </div>
-    <div class="row">
-        <div class="col-md-12 d-flex justify-content-end mt-3">
-            <button *ngIf="islogged" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Agregar Producto</button>
-        </div>
-    </div>
-    <div class="blog-card" *ngFor="let blog of blogColeccion">
+    <div class="blog-card">
         <div class="meta">
             <div class="photo"style="background-image: url(../../../assets/como-lo-hacemos/img1.jpg)"></div>
         </div>
         <div class="description">
-            <!--<h1>Estrategia</h1>-->
-            <h1>{{blog.titulo}}</h1>
+            <h1>Estrategia</h1>
+            
             <ul>
                 <li>
-                    <!--<p>Codiseñamos y apoyamos la implementación de la estrategia corporativa o competitiva, permitiendo a las organizaciones lograr su visión.</p>-->
-                    <p>{{blog.descripcion1}}</p>
+                    <p>Codiseñamos y apoyamos la implementación de la estrategia corporativa o competitiva, permitiendo a las organizaciones lograr su visión.</p>
+                    
                 </li>
                 <br>
                 <li>
-                    {{blog.descripcion2}}
+                    Diseñamos modelos de negocios y nuevas propuestas de valor
                 </li>
                 <br>
                 <li>
@@ -259,14 +251,7 @@
             </ul>
         </div>
         
-        <div class="row">
-                <div>
-                    <button class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="seleccionarBlog(blog)" >Editar</button>
-                </div>
-                <div>
-                    <button class="btn btn-primary" >Eliminar</button>
-                </div>
-        </div>
+       
     </div>
     
     <div class="blog-card alt my-4">
@@ -285,46 +270,25 @@
               </li>
           </ul>
         </div>
-        <div class="row">
-            <div>
-                <button  class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" *ngIf="islogged"  >Editar</button>
-            </div>
-            <div>
-                <button class="btn btn-primary" *ngIf="islogged" >Eliminar</button>
-            </div>
-    </div>
+        
     </div>
     <div class="blog-card">
         <div class="meta">
             <div class="photo"style="background-image: url(../../../assets/como-lo-hacemos/img3.jpg)"></div>
         </div>
         <div class="description">
-            <h1>Estrategia</h1>
+            <h1>Business Agility</h1>
             <ul>
                 <li>
-                    <p>Codiseñamos y apoyamos la implementación de la estrategia corporativa o competitiva, permitiendo a las organizaciones lograr su visión.</p>
+                    <p>Instalamos capacidades y prácticas de agilidad en organizaciones, procurando situar al cliente en el centro.</p>
                 </li>
                 <br>
                 <li>
-                    Diseñamos modelos de negocios y nuevas propuestas de valor.
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="blog-card">
-        <div class="meta">
-            <div class="photo"style="background-image: url(../../../assets/como-lo-hacemos/img1.jpg)"></div>
-        </div>
-        <div class="description">
-            <h1>Business agility</h1>
-            <ul>
-                <li>
-                    <p>Codiseñamos y apoyamos la implementación de la estrategia corporativa o competitiva, permitiendo a las organizaciones lograr su visión.</p>
-                    <p></p>
+                    Acompañamos en la ejecución y entrega de valor continuo al cliente.
                 </li>
                 <br>
                 <li>
-                    <p>Diseñamos modelos de negocios y nuevas propuestas de valor.</p>
+                    Facilitamos el alineamiento de la estrategia corporativa con un enfoque experimental.
                 </li>
             </ul>
         </div>

@@ -7,6 +7,7 @@ import { EstablecerEstrategiaEmpresarialComponent } from './blogs/establecer-est
 import { InnovacionComponent } from './blogs/innovacion/innovacion.component';
 import { TipsLiderarEquipoComponent } from './blogs/tips-liderar-equipo/tips-liderar-equipo.component';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
+import { EquipoComponent } from './paginas/equipo/equipo.component';
 import { FooterComponent } from './paginas/footer/footer.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import { ProfileComponent } from './paginas/profile/profile.component';
@@ -22,9 +23,6 @@ const routes: Routes = [
     path: "inicio" , component:InicioComponent
   },
   {
-    path: 'inicio/:id/que-hacemos', component: InicioComponent, pathMatch:'full'
-  },
-  {
     path: "footer" , component: FooterComponent
   },
   {
@@ -35,6 +33,9 @@ const routes: Routes = [
   },
   {
     path: "perfil" , component: ProfileComponent
+  },
+  {
+    path: "nuestro-equipo" , component:EquipoComponent 
   },
   {
     path: "inicio/bussines-agility" , component: BussinesAgilityComponent
