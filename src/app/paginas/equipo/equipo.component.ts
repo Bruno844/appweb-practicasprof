@@ -114,8 +114,8 @@ export class EquipoComponent implements OnInit {
   eliminarMiembro(id: string){
     let c = confirm('estas seguro de eliminar este elemento?');
     if(c){
-      this.equipoService.EliminarMiembro(id).then(res => alert('elemento eliminado con exito')
-      )
+      this.equipoService.EliminarMiembro(id).then(res => this.alertas.showError('Acabas de eliminar un miembro del equipo'))
+      
     }
   }
 
@@ -139,7 +139,7 @@ export class EquipoComponent implements OnInit {
   }
 
   obtenerFile(event:any){
-    this.file = event.target.files;
+    this.file = event.target.files[0];
   }
 
 

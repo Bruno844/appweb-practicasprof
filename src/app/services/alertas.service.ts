@@ -13,8 +13,8 @@ export class AlertasService {
     this.toast.success(texto, titulo);
   }
 
-  showError(texto:string, titulo:string){
-    this.toast.error(texto, titulo);
+  showError(titulo:string){
+    this.toast.error(titulo);
   }
 
   showOutLogin(texto:string, titulo:string){
