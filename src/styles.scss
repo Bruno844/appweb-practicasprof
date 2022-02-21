@@ -1,5 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeflex/primeflex.css";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Bebas+Neue&display=swap');
+
+p{
+    font-family: 'Bebas Neue', cursive;
+}
+span{
+    font-family: 'Bebas Neue', cursive;
+}
+li{
+    font-family: 'Bebas Neue', cursive;
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+}
+a{
+    font-family: 'Bebas Neue', cursive;
+}
 
 .p-menubar{
     border: none !important;

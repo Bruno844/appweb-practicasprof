@@ -165,6 +165,7 @@
 
 /*SECCION DE LAS CARDS DE COMO LO HACEMOS*/
 //--------------------------------------------------------------------------------//
+
 * {
   box-sizing: border-box;
 }
@@ -406,8 +407,8 @@ $color_grey_dark: #a2a2a2;
 }
 
 .link-block .dundas-blue-text-long {
-  position: absolute;
-  top: 140px;
+  position:relative;
+  top: 0;
   transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
   background-color: #f0f0f0;
   z-index: 100;

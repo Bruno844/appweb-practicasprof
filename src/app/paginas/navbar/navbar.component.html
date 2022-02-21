@@ -16,11 +16,10 @@
     <li class="hover-underline"><a href="contacto">Contacto</a></li>
   </ul> 
 </nav>-->
-<p-menubar [model]="items">
+<p-menubar [model]="items" class="fixed-top bg-white">
   <ng-template pTemplate="start">
     <img src="assets/logos/logo-app.png"  height="100" width="auto"  class="p-mr-2">
   </ng-template>
-  <p *ngIf="islogged">Bienvenido! {{username}}</p>
   <button  *ngIf="!islogged"  class="transition-delay-100 transition-colors transition-duration-1000 bg-blue-500 hover:bg-gray-900 text-white hover:text-white-900
     flex align-items-center justify-content-center font-bold border-round cursor-pointer m-2 px-5 py-3" pButton type="button" icon="pi pi-user" label="Iniciar Sesion" routerLink="registro">
   </button>

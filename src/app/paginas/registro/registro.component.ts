@@ -21,7 +21,8 @@ export class RegistroComponent implements OnInit {
   async login(user:string, pass:string){
     try{
       await this.authService.login(user, pass);
-      this.route.navigate(['/inicio'])
+      this.route.navigate(['/inicio']);
+      this.alerta.showSuccess('Iniciaste Sesion con Exito!', 'Bienvenido ');
     }catch(err:any){
       alert(err.message)
     }
@@ -54,5 +55,4 @@ export class RegistroComponent implements OnInit {
   }
     
 }
-
 

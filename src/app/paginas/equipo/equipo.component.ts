@@ -119,6 +119,8 @@ export class EquipoComponent implements OnInit {
     }
   }
 
+  //metodo que le pasa los valores de la coleccion de los miembros del equipo, pudiendo setear los valores que tiene cada miembro a la hora de editarlo
+
   seleccionarMiembro(miembro: EquipoI){
     this.editar = true;
     this.miembroSeleccionado = miembro;
